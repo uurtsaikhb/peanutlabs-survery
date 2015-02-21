@@ -9,7 +9,9 @@
             <button class="btn btn-danger" ng-click="setNewQuestionType(types.dropdown)">DropDown</button>
             <button class="btn btn-info" ng-click="setNewQuestionType(types.open_ended)">Open ended</button>
         </div>
+        
         <div ng-show="adding_question">
+            <hr>
             <form name="answerAdd">
                 <div class="form-group">
                     <label>Insert Question</label>
@@ -18,12 +20,11 @@
                 <div class="form-group" ng-repeat="(index, answer) in newQuestion.answers">
                     <input type="text" class="form-control" ng-model="answer" ng-blur="setAnswer(index, answer);" required>
                 </div>
-                <button class="btn btn-success" ng-click="addQuestion()" type="submit" data-ng-disabled="!answerAdd.$valid">Save</button>
-                <button class="btn btn-primary" ng-click="addAnswer()" ng-disabled="newQuestion.type === types.open_ended">add answer</button>
+                <button class="btn btn-success" ng-click="addQuestion()" type="submit" data-ng-disabled="!answerAdd.$valid">Save Question</button>
+                <button class="btn btn-primary" ng-click="addAnswer()" ng-disabled="newQuestion.type === types.open_ended">Add Answer</button>
             </form>
             <br>
         </div>
-        <h3>Look like</h3>
         <div class="list-group">
             <div class="list-group-item" ng-repeat="question in questions">
                 <h3>{{question.title}} ?</h3>
