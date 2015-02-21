@@ -4,31 +4,32 @@ app.service('surveyService', function() {
 
     var  _q_type, _html_question_type, _results = [],
     questionProto, questionModel,
-        _questions = [{
-            title : "Radio Question",
-            type : "radio",
-            answers : ["Answer 1", "Answer 2", "Answer 3", "Answer 4"],
-            formName : "quest_0",
-            created_at : Date()
-        },{
-            title : "Checkbox Question",
-            type : "checkbox",
-            answers : ["Answer 1", "Answer 2", "Answer 3", "Answer 4"],
-            formName : "quest_1",
-            created_at : Date()
-        },{
-            title : "Dropdown Question",
-            type : "dropdown",
-            answers : ["Answer 1", "Answer 2", "Answer 3", "Answer 4"],
-            formName : "quest_2",
-            created_at : Date()
-        },{
-            title : "Open ended Question",
-            type : "open_ended",
-            answers : [],
-            formName : "quest_3",
-            created_at : Date()
-        }];
+    _questions = [];
+        // _questions = [{
+        //     title : "Radio Question",
+        //     type : "radio",
+        //     answers : ["Answer 1", "Answer 2", "Answer 3", "Answer 4"],
+        //     formName : "quest_0",
+        //     created_at : Date()
+        // },{
+        //     title : "Checkbox Question",
+        //     type : "checkbox",
+        //     answers : ["Answer 1", "Answer 2", "Answer 3", "Answer 4"],
+        //     formName : "quest_1",
+        //     created_at : Date()
+        // },{
+        //     title : "Dropdown Question",
+        //     type : "dropdown",
+        //     answers : ["Answer 1", "Answer 2", "Answer 3", "Answer 4"],
+        //     formName : "quest_2",
+        //     created_at : Date()
+        // },{
+        //     title : "Open ended Question",
+        //     type : "open_ended",
+        //     answers : [],
+        //     formName : "quest_3",
+        //     created_at : Date()
+        // }];
 
     _q_type = {
         radio: "radio",
