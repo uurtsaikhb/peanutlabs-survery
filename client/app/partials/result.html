@@ -1,0 +1,13 @@
+<div class="container">
+    <h1>Your result</h1>
+    <div class="row" >
+        <div class="list-group">
+            <div class="list-group-item" ng-repeat="result in results">
+                <h3>{{result.questionTitle}} ?</h3>
+                <ul>
+                    <li ng-repeat="answer in result.answers">{{answer}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

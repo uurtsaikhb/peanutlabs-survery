@@ -1,0 +1,16 @@
+<div class="container">
+    <h1>Take Survey</h1>
+    <div class="row" >
+        <form name="surveyForm">
+            <div class="list-group">
+                <div class="list-group-item" ng-repeat="question in questions">
+                    <h3 class="primary">{{question.title}} ?</h3>
+                    <survey-answer question="question"></survey-answer>
+                </div>
+                <div class="list-group-item">
+                    <button class="btn btn-primary btn-lg" ng-disabled="!surveyForm.$valid" ng-click="completeSurvey()">Complete Survey</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

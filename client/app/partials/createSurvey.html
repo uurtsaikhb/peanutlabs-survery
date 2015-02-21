@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row">
+        <h1>Create Survey <button ng-click="showing_type = !showing_type" class="btn btn-success btn-lg">Add question</button></h1>
+        <hr>
+
+        <div ng-show="showing_type" class="btn-group" role="group">
+            <button class="btn btn-primary" ng-click="setNewQuestionType(types.radio);">Radio</button>
+            <button class="btn btn-warning" ng-click="setNewQuestionType(types.checkbox)">Checkbox</button>
+            <button class="btn btn-danger" ng-click="setNewQuestionType(types.dropdown)">DropDown</button>
+            <button class="btn btn-info" ng-click="setNewQuestionType(types.open_ended)">Open ended</button>
+        </div>
+        <div ng-show="adding_question">
+            <form name="answerAdd">
+                <div class="form-group">
+                    <label>Insert Question</label>
+                    <input type="text" class="form-control" placeholder="Question" ng-model="newQuestion.title" required>
+                </div>
+                <div class="form-group" ng-repeat="(index, answer) in newQuestion.answers">
+                    <input type="text" class="form-control" ng-model="answer" ng-blur="setAnswer(index, answer);" required>
+                </div>
+                <button class="btn btn-success" ng-click="addQuestion()" type="submit" data-ng-disabled="!answerAdd.$valid">Save</button>
+                <button class="btn btn-primary" ng-click="addAnswer()" ng-disabled="newQuestion.type === types.open_ended">add answer</button>
+            </form>
+            <br>
+        </div>
+        <h3>Look like</h3>
+        <div class="list-group">
+            <div class="list-group-item" ng-repeat="question in questions">
+                <h3>{{question.title}} ?</h3>
+                <survey-answer question="question"></survey-answer>
+            </div>
+        </div>
+    </div>
+</div>

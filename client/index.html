@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" data-ng-app="survey">
+
+<head>
+    <title>Survey Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default" data-ng-controller="NavbarController">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#/">Survey</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li data-ng-class="{'active':getClass('/createSurvey')}" ><a href="#/createSurvey">Create Survey</a>
+                    </li>
+                    <li data-ng-class="{'active':getClass('/takeSurvey')}"><a href="#/takeSurvey">Take Survey</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Note that AngularJS 1.2+ now has a built-in ng-animation direction. Left in animated-view to show a 
+         custom directive -->
+    <div animated-view></div>
+
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://code.angularjs.org/1.3.13/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.3.13/angular-route.min.js"></script>
+
+    <!-- App libs -->
+    <script src="/app/app.js"></script>
+    <script src="/app/controllers/controllers.js"></script>
+    <script src="/app/services/customersService.js"></script>
+    <script src="/app/directives/animatedView.js"></script>
+    <script src="/app/directives/survey-answer.js"></script>
+</body>
+
+</html>
