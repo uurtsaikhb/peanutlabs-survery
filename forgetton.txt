@@ -1,3 +1,6 @@
+<<<<<<< HEAD
 added this line 
 
+=======
+>>>>>>> 65336e39554aad20a436688e2ca6ba786b496c27
 this is a text file that i have created using vi command
