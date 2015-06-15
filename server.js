@@ -28,3 +28,7 @@ function display (data){
 	console.log('imported data: '+ data);
 }
 
+function getData (){
+	return data;
+}
+
