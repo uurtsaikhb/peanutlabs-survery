@@ -1,10 +1,8 @@
-adding this line after successfully merged address to branch master
-
-adding some line on new branch address
+Uurtsaikh Batbileg
+uurtsaikh.ba@gmail.com
 	Apt 142-220, MUM
-	1000 N 4th ST
+	1000 N 4TH ST
 	Fairfield IA, 52557
 	United States
-again adding some information on branch master and already created new branch. it should be isolated files.
 
 changing an information on branch master. I have no branches at this point of time.
