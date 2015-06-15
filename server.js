@@ -26,3 +26,9 @@ function getData (){
 	return data;
 }
 
+var createObject = function () {
+	return {
+		name: 'Uurtsaikh',
+		email: 'uurtsaikh.ba@gmail.com'
+	};
+} 
