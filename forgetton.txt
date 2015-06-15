@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 adding some information for this file. I am working on branch master
+=======
+just switched branch to -> testing. 
+>>>>>>> testing
 
 <<<<<<< HEAD
 added this line 
