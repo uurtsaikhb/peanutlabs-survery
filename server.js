@@ -18,9 +18,11 @@ server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function(){
   console.log("Survey server listening at", addr.address + ":" + addr.port);
 });
 
-
-
 var display = function (data){
-	console.log('inserted data: ' + data.data);
+	console.log('imported data: '+ data);
+}
+
+function getData (){
+	return data;
 }
 
