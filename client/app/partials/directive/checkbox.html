@@ -1,3 +1,9 @@
-<div class="checkbox" ng-repeat="answer in question.answers">
-    <label><input type="checkbox" ng-click="giveAnswerCheckbox(answer)" ng-required="result.answers.length === 0"> {{answer}}</label>
+<div class="checkbox" 
+	ng-repeat="answer in question.answers">
+    <label>
+	    <input 	type="checkbox" 
+	    		ng-click="giveAnswerCheckbox(answer)" 
+	    		ng-required="result.answers.length === 0" > 
+	    		{{ answer }}
+    </label>
 </div>

@@ -5,17 +5,17 @@ app.config(function ($routeProvider) {
         .when('/createSurvey',
             {
                 controller: 'CreateSurveyCtrl',
-                templateUrl: '/app/partials/createSurvey.html'
+                templateUrl: 'app/partials/createSurvey.html'
             })
         .when('/takeSurvey',
             {
                 controller: 'TakeSurveyCtrl',
-                templateUrl: '/app/partials/takeSurvey.html'
+                templateUrl: 'app/partials/takeSurvey.html'
             })
         .when('/resultSurvey',
             {
                 controller: 'ResultSurvey',
-                templateUrl: '/app/partials/result.html'
+                templateUrl: 'app/partials/result.html'
             })
         .otherwise({ redirectTo: '/createSurvey' });
 });

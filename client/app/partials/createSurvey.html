@@ -1,8 +1,9 @@
 <div class="container">
     <div class="row">
-        <h1>Create Survey <button ng-click="showing_type = !showing_type" class="btn btn-success btn-lg">Add question</button></h1>
+        <h1>Create Survey 
+            <button ng-click="showing_type = !showing_type" class="btn btn-success btn-lg">Add question</button>
+        </h1>
         <hr>
-
         <div ng-show="showing_type" class="btn-group" role="group">
             <button class="btn btn-primary" ng-click="setNewQuestionType(types.radio);">Radio</button>
             <button class="btn btn-warning" ng-click="setNewQuestionType(types.checkbox)">Checkbox</button>

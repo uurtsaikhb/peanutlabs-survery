@@ -15,12 +15,11 @@ app.directive('surveyAnswer', function() {
            
            $scope.getContentUrl = function() {
                 var htmlName = surveyService.getHtmlUrlForType($scope.question.type);
-                return '/app/partials/directive/'+htmlName;
+                return 'app/partials/directive/'+htmlName;
            };
            
            $scope.giveAnswer = function(answer){
                $scope.result.answers[0] = answer;
-               console.log($scope.result);
            };
            
            $scope.giveAnswerCheckbox = function(answer){
